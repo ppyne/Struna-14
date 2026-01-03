@@ -53,6 +53,8 @@ Supported MIDI functionality:
 
 The MIDI RX pin is configurable and mapped to a GPIO assigned to `Serial2`.
 
+![MIDI IN Schematic](schematic_midi.jpg)
+
 ---
 
 ## Audio Output
