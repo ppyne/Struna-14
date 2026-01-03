@@ -10,7 +10,8 @@ The synthesis engine is intentionally simple and efficient, relying on sine-base
 
 - 14-voice polyphony  
 - ESP32-based (Arduino framework)  
-- MIDI input at 31,250 baud  
+- **MIDI input (DIN) at 31,250 baud**  
+- **Audio output via PCM5102 I²S DAC**  
 - Sine oscillator core with controlled harmonic enrichment  
 - Plucked-string inspired excitation (noise burst + decay)  
 - Subtle inharmonic component for realism  
@@ -36,15 +37,45 @@ The overall architecture favors **clarity, articulation, and musical balance** o
 
 ---
 
+## MIDI
+
+Struna-14 is controlled via **standard MIDI input**:
+
+- MIDI baud rate: **31,250**
+- UART: `Serial2`
+- MIDI IN implemented using an **optocoupler (tested with 6N137)**
+
+Supported MIDI functionality:
+- Note On / Note Off
+- Polyphonic note handling up to 14 voices
+
+The MIDI RX pin is configurable and mapped to a GPIO assigned to `Serial2`.
+
+---
+
+## Audio Output
+
+Audio is generated digitally at **44.1 kHz** and output via an **external PCM5102 DAC** using the ESP32 I²S peripheral.
+
+- DAC: **PCM5102 / PCM5102A**
+- Interface: **I²S**
+- Output: **mono** (summed internally)
+- Internal processing: floating-point
+
+The PCM5102 provides significantly better audio quality than the internal ESP32 DAC and is the recommended output method for Struna-14.
+
+An external analog stage (RC filter / buffer / amplifier) is recommended after the DAC.
+
+---
+
 ## Hardware
 
 Typical setup:
 
 - ESP32 (e.g. WROOM-32 DevKit)  
-- MIDI IN via optocoupler (tested with 6N137)  
-- Audio output via DAC or external audio interface  
-
-MIDI RX is connected to a configurable GPIO assigned to `Serial2`.
+- MIDI IN (DIN 5) via optocoupler (6N137)  
+- PCM5102 I²S DAC module  
+- Optional analog output stage (filter, buffer, amplifier)
 
 ---
 
@@ -79,4 +110,5 @@ BSD 2-Clause License.
 
 ---
 
-Struna-14 is intended as a **musical instrument**, not a DSP showcase. The goal is expressiveness, efficiency, and a coherent sonic identity.
+Struna-14 is intended as a **musical instrument**, not a DSP showcase.  
+The goal is expressiveness, efficiency, and a coherent sonic identity.
