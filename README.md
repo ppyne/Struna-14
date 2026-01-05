@@ -4,8 +4,9 @@ Struna-14 is a **14-voice polyphonic synthesizer** built around an **ESP32**, de
 
 The synthesis engine is intentionally simple and efficient, relying on sine-based oscillators subtly enriched to achieve brightness and presence without harshness.
 
-[Link to mp3 audio sample](sample_santa_maria_strela_do_dia.mp3)
 [Link to video sample on YouTube](https://youtube.com/shorts/qyLxYTSVYI4?feature=share)
+
+[Link to mp3 audio sample](sample_santa_maria_strela_do_dia.mp3)
 
 ![Illustration](photo.jpg)
 
