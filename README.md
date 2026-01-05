@@ -110,7 +110,7 @@ Possible future additions:
 
 ## License
 
-[BSD 3-Clause "New" or "Revised" License](LICENSE)
+[BSD 3-Clause License](LICENSE)
 
 ---
 
