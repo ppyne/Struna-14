@@ -115,4 +115,4 @@ Possible future additions:
 ---
 
 Struna-14 is intended as a **musical instrument**, not a DSP showcase.
-The goal is expressiveness, efficiency, and a coherent sonic identity.
+The goal is expressiveness, efficiency, and a coherent sonic identity. 
