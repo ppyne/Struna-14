@@ -6,8 +6,6 @@ The synthesis engine is intentionally simple and efficient, relying on sine-base
 
 [Link to video sample on YouTube (with a sequencer)](https://youtube.com/shorts/qyLxYTSVYI4?feature=share)
 
-[Link to mp3 audio sample](sample_santa_maria_strela_do_dia.mp3)
-
 ![Illustration](photo.jpg)
 
 ---
