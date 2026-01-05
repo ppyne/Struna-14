@@ -6,7 +6,7 @@ The synthesis engine is intentionally simple and efficient, relying on a sine-ba
 
 [Link to video sample on YouTube (with a MIDI sequencer)](https://youtube.com/shorts/qyLxYTSVYI4?feature=share)
 
-![Illustration](photo.jpg)
+![Illustration](photo.jpg?v=2)
 
 ---
 
@@ -115,4 +115,4 @@ Possible future additions:
 ---
 
 Struna-14 is intended as a **musical instrument**, not a DSP showcase.
-The goal is expressiveness, efficiency, and a coherent sonic identity. 
+The goal is expressiveness, efficiency, and a coherent sonic identity.
