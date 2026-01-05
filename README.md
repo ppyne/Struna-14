@@ -6,7 +6,7 @@ The synthesis engine is intentionally simple and efficient, relying on a sine-ba
 
 [Link to video sample on YouTube (with a MIDI sequencer)](https://youtube.com/shorts/qyLxYTSVYI4?feature=share)
 
-![Illustration](photo.jpg?v=2)
+![Illustration](photo.jpg)
 
 ---
 
